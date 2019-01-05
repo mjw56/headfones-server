@@ -1,0 +1,13 @@
+type Query {
+  album(id: String): Album
+  albums(ids: [String]): [Album]
+  artist(id: String): Artist
+  artistBio(id: String): ArtistBio
+  artistTopTracks(id: String): TopTracks
+  artists(ids: [String]): Artist
+  playlist(userId: String, playlistId: String): Playlist
+  track(id: String): Track
+  tracks(ids: [String]): [Track]
+  recentlyPlayed: [Track]
+  search(query: String): SearchResults
+}

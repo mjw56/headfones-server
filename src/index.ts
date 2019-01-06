@@ -63,7 +63,11 @@ const options = {
   endpoint: '/graphql',
   port: PORT,
   playground: '/playground',
-  formatError
+  formatError,
+  cors: {
+    origin: ['http://localhost:3000'],
+    credentials: true
+  }
 };
 
 server.express.use(cookieParser());
